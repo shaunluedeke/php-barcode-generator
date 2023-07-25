@@ -15,7 +15,7 @@ class BarcodeGeneratorHTML extends BarcodeGenerator
      * @param string $foregroundColor Foreground color for bar elements as '#333' or 'orange' for example (background is transparent).
      * @return string HTML code.
      */
-    public function getBarcode($barcode, $type, int $widthFactor = 2, int $height = 30, string $foregroundColor = 'black'): string
+    public function getBarcode($barcode, $type, float $widthFactor = 2, int $height = 30, string $foregroundColor = 'black'): string
     {
         $barcodeData = $this->getBarcodeData($barcode, $type);
 
